@@ -1,9 +1,10 @@
+import ManageProducts from "./pages/ManageProducts";
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Akash</h1>
+      <ManageProducts/>
     </div>
   );
 }
