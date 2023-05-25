@@ -1,10 +1,9 @@
-import ManageProducts from "./pages/ManageProducts";
-
+import CoustomRouter from "./router/router";
 
 function App() {
   return (
     <div className="App">
-      <ManageProducts/>
+      <CoustomRouter/>
     </div>
   );
 }
