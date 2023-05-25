@@ -1,4 +1,5 @@
 import { Space, Table, Tag } from 'antd';
+import {DeleteOutlined , EditOutlined} from "@ant-design/icons";
 
 
 const ManageProducts = () =>{
@@ -22,8 +23,8 @@ const ManageProducts = () =>{
             key: 'action',
             render: (_, record) => (
               <Space size="middle">
-                <a>Invite {record.name}</a>
-                <a>Delete</a>
+                <EditOutlined />
+                <DeleteOutlined />
               </Space>
             ),
           },
