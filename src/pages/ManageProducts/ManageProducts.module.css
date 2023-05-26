@@ -3,3 +3,12 @@
     height: 100%;
     padding: 0 24px;
 }
+
+.topHeader{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
