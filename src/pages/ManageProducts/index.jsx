@@ -62,16 +62,18 @@ const ManageProducts = () =>{
         <div className={styles.mainContainer}>
           {/* Top Header*/}
           <div className={styles.topHeader}>
-          <Title level={3}> Manage Products</Title>
+            <Title level={3}> Manage Products</Title>
               <Button type="primary"
               onClick={()=>{
-                
+                console.log("button clicked")
               }}
               >
               Add a Product
               </Button>
           </div>
 
+
+          {/* product list table */}
           <Table columns={columns} dataSource={data}/>
 
         </div>
