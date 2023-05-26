@@ -1,4 +1,4 @@
-import { Space, Table, Tag } from 'antd';
+import { Space, Table, Button } from 'antd';
 import {DeleteOutlined , EditOutlined} from "@ant-design/icons";
 
 
@@ -54,6 +54,13 @@ const ManageProducts = () =>{
 
     return(
         <>
+        <Button type="primary"
+        onClick={()=>{
+          
+        }}
+        >
+        Add a Product
+        </Button>
         <Table columns={columns} dataSource={data}/>
 
         </>
