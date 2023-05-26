@@ -1,5 +1,10 @@
-import { Space, Table, Button } from 'antd';
+import { Space, Table, Button, Typography } from 'antd';
 import {DeleteOutlined , EditOutlined} from "@ant-design/icons";
+import styles from "./ManageProducts.module.css";
+
+
+
+const { Title } = Typography;// for add a heading or title of page in antDesign
 
 
 const ManageProducts = () =>{
@@ -54,14 +59,22 @@ const ManageProducts = () =>{
 
     return(
         <>
-        <Button type="primary"
-        onClick={()=>{
-          
-        }}
-        >
-        Add a Product
-        </Button>
-        <Table columns={columns} dataSource={data}/>
+        <div className={styles.mainContainer}>
+          {/* Top Header*/}
+          <div className={styles.topHeader}>
+          <Title level={3}> Manage Products</Title>
+              <Button type="primary"
+              onClick={()=>{
+                
+              }}
+              >
+              Add a Product
+              </Button>
+          </div>
+
+          <Table columns={columns} dataSource={data}/>
+
+        </div>
 
         </>
     );
