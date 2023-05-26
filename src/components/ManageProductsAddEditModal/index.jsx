@@ -1,12 +1,21 @@
-import { Modal, Button } from 'antd';
+import { Modal, Button, Form, Input,InputNumber } from 'antd';
 
-const ManageProductsAddEditForm =({})=>{
+const ManageProductsAddEditForm =({
+    isEdit = false,
+    isVisible = false,
+    onCancel = ()=>{},
+})=>{
 
     return(
-        <Modal>
+        <Modal
+            title = {`${isEdit? "Edit":"Add" } Product`}
+            open = {isVisible}
+            onCancel={onCancel}
+            footer={null}
+        >
 
-            <Button>
-
+            <Button type="primary" htmlType="submit">
+            Submit
             </Button>
 
         </Modal>

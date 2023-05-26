@@ -2,6 +2,8 @@ import { Space, Table, Button, Typography } from 'antd';
 import {DeleteOutlined , EditOutlined} from "@ant-design/icons";
 import styles from "./ManageProducts.module.css";
 
+import {ManageProductsAddEditModal} from "../../components"; 
+
 
 
 const { Title } = Typography;// for add a heading or title of page in antDesign
