@@ -1,4 +1,4 @@
-import { Modal, Button, Form, Input,InputNumber, message } from 'antd';
+import { Modal, Button, Form, Input,InputNumber } from 'antd';
 
 const ManageProductsAddEditForm =({
     isEdit = false,
